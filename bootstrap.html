@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<title>fff</title>
+	</head>
+	<body>
+		<!--
+        	作者：905857368@qq.com
+        	时间：2016-12-23
+        	描述：排版
+        -->
+        <p>排版</p>
+		<p class="text-left">Left aligned text.</p>
+		<p class="text-center">Center aligned text.</p>
+		<p class="text-right">Right aligned text.</p>
+		<!--
+        	作者：905857368@qq.com
+        	时间：2016-12-23
+        	描述：按钮
+        -->
+        <p>按钮</p>
+		<p>
+		  <button class="btn btn-large btn-primary" type="button">Large button</button>
+		  <button class="btn btn-large" type="button">Large button</button>
+		</p>
+		<!--
+        	作者：905857368@qq.com
+        	时间：2016-12-23
+        	描述：组件：下拉菜单
+        -->
+        <p>组件-按钮下拉</p>
+        <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group dropup">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+          
+          <!--
+          	作者：905857368@qq.com
+          	时间：2016-12-23
+          	描述：模态框
+          -->
+          <!-- Button trigger modal -->
+          <p>模态框</p>
+			<button type="button" class="btn btn-primary btn-lg" 
+				data-toggle="modal" data-target="#myModal">
+			 模态框 演示
+			</button>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</body>
+</html>
