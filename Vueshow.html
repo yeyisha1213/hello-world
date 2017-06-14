@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="./js/vue.min.js"></script>
+		<title></title>
+		<style>
+			.active{
+				color: red;
+			}
+			.text-danger{
+				font-weight: 800;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+		    <div v-bind:title="title">{{message}}</div>
+		    <input type="text" v-model="message">
+		    <div v-bind:class="{ active: isActive, 'text-danger': hasError }" 
+		    	v-bind:style="aaa">对对对</div>
+		    <button v-on:click="counter += 1">增加 1</button>
+            <p>这个按钮被点击了 {{ counter }} 次。</p>
+		</div>
+	</body>
+	<script>
+		new Vue({
+		    el:'#app',
+		    data: {
+		        message:'hello vue.js.',
+		        title:'mkjccccsefwefw',
+		        isActive: true,
+  				hasError: false,
+  				counter: 0,
+  				aaa:{
+  					fontSize:'20px'
+  				}
+		    }
+		});
+	</script>
+</html>
